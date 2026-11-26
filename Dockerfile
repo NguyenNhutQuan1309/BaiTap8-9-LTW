@@ -5,20 +5,20 @@ FROM maven:3.9.16-eclipse-temurin-17 AS build
 
 # Exercise 8 - Email List
 WORKDIR /workspace/email-list
-COPY 02_SOLUTION_DapAn/Bai8/Bai8_Exercise8-1_EmailList/pom.xml ./pom.xml
-COPY 02_SOLUTION_DapAn/Bai8/Bai8_Exercise8-1_EmailList/src ./src
+COPY Bai8_Exercise8-1_EmailList/pom.xml ./pom.xml
+COPY Bai8_Exercise8-1_EmailList/src ./src
 RUN mvn -B -ntp clean package -DskipTests
 
 # Exercise 9-1 - Download
 WORKDIR /workspace/download
-COPY 02_SOLUTION_DapAn/Bai9/Bai9_Exercise9-1_Download/pom.xml ./pom.xml
-COPY 02_SOLUTION_DapAn/Bai9/Bai9_Exercise9-1_Download/src ./src
+COPY Bai9_Exercise9-1_Download/pom.xml ./pom.xml
+COPY Bai9_Exercise9-1_Download/src ./src
 RUN mvn -B -ntp clean package -DskipTests
 
 # Exercise 9-2 - Cart
 WORKDIR /workspace/cart
-COPY 02_SOLUTION_DapAn/Bai9/Bai9_Exercise9-2_Cart/pom.xml ./pom.xml
-COPY 02_SOLUTION_DapAn/Bai9/Bai9_Exercise9-2_Cart/src ./src
+COPY Bai9_Exercise9-2_Cart/pom.xml ./pom.xml
+COPY Bai9_Exercise9-2_Cart/src ./src
 RUN mvn -B -ntp clean package -DskipTests
 
 # ============================================================
