@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài tập Java Web – Bài 8 & 9</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; background: #f3f6fb; color: #172033; }
+    main { width: min(900px, calc(100% - 32px)); margin: 64px auto; }
+    .heading { margin-bottom: 28px; }
+    h1 { margin: 0 0 10px; font-size: clamp(28px, 5vw, 40px); }
+    .sub { color: #667085; line-height: 1.6; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+    .card { background: #fff; border: 1px solid #e4e9f1; border-radius: 16px; padding: 22px; box-shadow: 0 8px 24px rgba(20, 35, 60, .05); }
+    .tag { display: inline-block; color: #2457c5; background: #edf3ff; border-radius: 999px; padding: 6px 10px; font-size: 12px; font-weight: 700; }
+    h2 { font-size: 20px; margin: 16px 0 8px; }
+    p { color: #667085; line-height: 1.5; min-height: 46px; }
+    a { display: inline-block; margin-top: 10px; padding: 11px 16px; border-radius: 9px; background: #2457c5; color: #fff; text-decoration: none; font-weight: 700; }
+    a:hover { background: #19449f; }
+    footer { color: #98a2b3; margin-top: 30px; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="heading">
+      <h1>Bài tập Java Web – Bài 8 & 9</h1>
+      <div class="sub">Chọn một ứng dụng bên dưới để mở. Cả ba ứng dụng đang chạy trên cùng một Render Web Service.</div>
+    </div>
+    <section class="cards">
+      <article class="card">
+        <span class="tag">EXERCISE 8-1</span>
+        <h2>Email List</h2>
+        <p>Ứng dụng đăng ký email và hiển thị thông tin bằng JSP Expression Language.</p>
+        <a href="/email-list/">Mở Bài 8</a>
+      </article>
+      <article class="card">
+        <span class="tag">EXERCISE 9-1</span>
+        <h2>Download</h2>
+        <p>Ứng dụng Download sử dụng JSTL để xử lý dữ liệu và hiển thị cookie.</p>
+        <a href="/download/">Mở Bài 9-1</a>
+      </article>
+      <article class="card">
+        <span class="tag">EXERCISE 9-2</span>
+        <h2>Cart</h2>
+        <p>Ứng dụng giỏ hàng, danh sách sản phẩm và thao tác với JSTL.</p>
+        <a href="/cart/">Mở Bài 9-2</a>
+      </article>
+    </section>
+    <footer>Java 17 · Jakarta Servlet · JSP/JSTL · Apache Tomcat 10.1</footer>
+  </main>
+</body>
+</html>
